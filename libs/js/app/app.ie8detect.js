@@ -8,11 +8,9 @@ function IsIE8Browser() {
         rv = parseFloat(RegExp.$1);
     }
     return (rv == 4);
-    //return true;
 }
 
 if (IsIE8Browser()) {
-    
     var htmlObj = document.getElementsByTagName('html')[0];
         htmlObj.className = htmlObj.className + ' no-js lt-ie9';
 
